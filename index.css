@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lobster&family=Poppins:wght@400;700&family=Roboto:wght@100&family=Rubik+Puddles&family=Titillium+Web:ital,wght@1,200&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    position: relative;
+    height: 100vh;
+}
+.container1
+{
+    background-image: url(https://thumbs.gfycat.com/BrownGregariousGoosefish-size_restricted.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container1 button
+{
+     width: 40vw;
+     font-size: 30px;
+     padding: 20px;
+     background: none;
+     color: #ffffff;
+     border: none;
+     outline: one;
+     font-weight: bold;
+     font-family: "Roboto" ;
+}
+
+.container2,.container3,.container4,.container5
+{
+    background-image: url(https://media3.giphy.com/media/3osxYmUhBUjzd430tO/giphy.gif?cid=6c09b952041c44f359bad366009afd862cfc8dfee48c0d1d&ep=v1_internal_gifs_gifId&rid=giphy.gif&ct=g);
+    display: flex;
+    background-attachment: fixed;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: none;
+    transition: all .3s ease-in-out;
+}
+.container2,.container3
+{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container2 h1
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    animation: zoom 10s ;
+} 
+
+.next
+{
+    font-family:"Rubik Puddles" ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.control
+{
+    display: flex;
+    gap: 10px;
+
+}
+.delay,#start
+{
+    font-family:"Rubik Puddles" ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    color: #ffffff;
+}
+h6{
+    font-family:"Rubik Puddles" ;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+h1
+{
+    font-family:"Rubik Puddles" ;
+    text-align: center;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+@keyframes zoom {
+
+    0%{font-size:5px}
+    15%{font-size:25px}
+    30%{font-size:35px}
+    45%{font-size: 45px}
+    60%{font-size: 55px}
+    75%{font-size: 65px}
+    90%{font-size: 75px}
+    100%{font-size:100px}
+}
+#start
+{
+    display: none;
+    transition: .3s ease-in-out;
+    font-size: 70px;
+}
+p
+{
+    margin: 30px;
+    border: 1px solid white;
+    font-size: 30px;
+    font-family:"Titillium Web";
+    padding: 20px;
+    color: yellow;
+    cursor: pointer;
+    font-weight: bolder;
+    animation: shakeobj 20s infinite;
+}
+.hidden
+{
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    z-index: +1;
+    transition: all 1s;
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0px);
+    z-index: +1;
+    transform: translateX(0);
+}
+
+@keyframes shakeobj {
+    0%,
+    30%,
+    70%{
+     transform: translate(.9rem);
+   
+    }
+    15%,
+    45%,
+    50%,
+    90%{
+     transform: translate(-.2rem);
+   
+    }
+    100%
+    {
+     transform: translate(0);
+ 
+    }
+ }
+ .container4 button
+ {
+    width: 40vw;
+    padding: 20px;
+    font-family: "Rubik puddles";
+    font-size: 60px;
+    color: Yellow;
+    background: none;
+    border: none;
+    outline: none;
+ }
